@@ -1,0 +1,255 @@
+
+/*REGLES GENERALES*/
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  color: #878787;
+}
+.equal-row {
+  display: flex;
+}
+section {
+  padding-bottom: 100px;
+}
+ul {
+  list-style: none;
+}
+.container-fluid {
+  padding: 0;
+}
+.separation {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.separation svg {
+}
+h1:hover {
+animation: pulse 2s infinite;
+transform-origin: center;
+}
+
+@keyframes pulse {
+    0% {transform: scale(1,1);}
+    50% {transform: scale(1.05,1.05);}
+    100% {transform: scale(1,1);}
+}
+.box-h2 {
+  display: flex;
+}
+h2 {
+  text-align: center;
+  font-size: 6rem;
+  font-weight: 300;
+  color: #3aaa35;
+  font-weight: 100;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  margin-bottom: 50px;
+}
+h2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  border-bottom: solid 2px #3aaa35;
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0.6);
+  transform-origin: center;
+}
+
+
+/*REGLES HEADER*/
+.header {
+  background-color: #ededed;
+}
+.top {
+  background-color: #3aaa35;
+  height: 50px;
+  display: flex;
+}
+.top span {
+  display: block;
+  float: left;
+  margin-left: 30px;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #fff;
+}
+.top a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+}
+.top span i {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.top .social a img {
+  height: 20px;
+  margin-left: 20px;
+}
+.header h1 {
+  margin-left: 30px;
+}
+.header h1 a img {
+  width: 200px;
+}
+.header ul {
+  float: right;
+  padding: 30px;
+}
+.header ul li {
+  float: left;
+}
+.header ul li a {
+  display: block;
+  color: #878787;
+  text-decoration: none;
+  margin-right: 20px;
+  position: relative;
+}
+.header ul  li a::after {
+  content: "";
+  display: block;
+  transition: transform .2s cubic-bezier(.165,.84,.44,1),-webkit-transform .2s cubic-bezier(.165,.84,.44,1);
+  box-sizing: border-box;
+  border-bottom: solid 3px #3aaa35;
+  width: 100%;
+  position: absolute;
+  bottom: -3px;
+  right: 0;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+.header ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.header .intro {
+  display: block;
+  width: calc(100%/3);
+  margin-top: 20px;
+  margin-left: 30px;
+  color: #3aaa35;
+}
+
+/*REGLES PRESTATIONS*/
+
+#prestations .row div {
+  padding: 0;
+}
+
+.bloc-prestations,.bloc-prestations:hover {
+  background-color: #ededed;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 30px;
+  height: 100%;
+}
+.contenu-bloc-prestations {
+  background-color: rgba(255, 255, 255, 0.85);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  opacity: 0;
+}
+.contenu-bloc-prestations h3 {
+text-align: center;
+text-decoration: none;
+text-transform: uppercase;
+font-size: 3rem;
+color: #3aaa35;
+}
+.contenu-bloc-prestations img {
+  height: 150px;
+  margin-top: 15px;
+}
+.contenu-bloc-prestations p {
+  display: block;
+text-decoration: none;
+/*padding: 15px;*/
+border-left: solid 2px #3aaa35;
+box-sizing: border-box;
+margin: 30px;
+padding-left: 10px;
+}
+
+#site-vitrine {
+  background-image: url('img/vitrine.jpg');
+  background-position: center;
+  background-size: cover;
+}
+#site-vitrine:hover .contenu-bloc-prestations {
+  opacity: 1;
+  transition: opacity 0.25s;
+}
+#e-commerce {
+  background-image: url('img/e-commerce.jpeg');
+  background-position: center;
+  background-size: cover;
+}
+#e-commerce:hover .contenu-bloc-prestations {
+  opacity: 1;
+  transition: opacity 0.25s;
+}
+#dev {
+  background-image: url('img/code.jpg');
+  background-position: center;
+  background-size: cover;
+}
+#dev:hover .contenu-bloc-prestations {
+  opacity: 1;
+  transition: opacity 0.25s;
+}
+
+/*REGLES SERVICES*/
+#services {
+  background-color: #ededed;
+}
+.bloc-service {
+
+}
+.bloc-service-top {
+  display: flex;
+}
+.bloc-service-top img {
+  width: 50px;
+  height: 50px;
+}
+.bloc-service-top .line {
+  background-color: #3aaa35;
+  width: 100%;
+  height: 2px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.bloc-service-top h4 {
+  line-height: 50px;
+  padding: 0;
+  margin: 0;
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.bloc-service p {
+  display: block;
+  text-align: justify;
+  padding: 0;
+  border-bottom: solid 2px #3aaa35;
+  padding-bottom: 10px;
+}
+
+/*REGLES COMPETENCES*/
+.carte-competences {
+  min-height: 200px;
+  background-color: #3aaa35;
+}
