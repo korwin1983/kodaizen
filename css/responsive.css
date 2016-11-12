@@ -1,0 +1,162 @@
+
+/*SMARTPHONES-----------------------------------------------------------------*/
+@media only screen and (max-width:767px) {
+  /*regles generales*/
+  h2 {
+    font-size: 4rem;
+  }
+  section {
+    padding-bottom: 50px;
+  }
+.separation svg {
+  height: 30px;
+}
+  /*regles header*/
+
+  .top .mail, .top .phone {
+    margin-left: 10px;
+  }
+  .top .mail span, .top .phone span {
+    display: none;
+  }
+  .top .mail img, .top .phone img {
+    margin: 0 10px;
+  }
+  .header h1 {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  .header h1 a img {
+    width: 150px;
+  }
+  .header .intro {
+    width: 100%;
+    margin: 0px 10px;
+  }
+#filtre-menu-mobile {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.6;
+  z-index: 10000;
+}
+
+  .menu {
+    position: fixed;
+    width: 200px;
+    right: -200px;
+    top: 0px;
+    height: 100%;
+    background-color: #3aaa35;
+    z-index: 10000;
+    transition: all ease-in 0.3s;
+  }
+  #bouton-menu-mobile {
+    display: block;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  #titre-menu-mobile {
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 50px;
+
+  }
+  #fermeture-menu-mobile {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    height: 30px;
+  }
+
+  .menu ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .menu ul li {
+    text-align: center;
+    padding: 10px 0;
+    border-top: solid 1px #fff;
+    display: flex;
+  }
+  .menu ul li:last-child {
+    border-bottom: solid 1px #fff;
+  }
+  .menu ul li a {
+color: #fff;
+margin-right: 0;
+display: block;
+margin: auto;
+margin-top: auto;
+margin-bottom: auto;
+  }
+
+  /*regles prestations*/
+
+  .contenu-bloc-prestations {
+    opacity: 1;
+  }
+  .contenu-bloc-prestations img {
+    height: 50px;
+  }
+  .contenu-bloc-prestations h3 {
+    font-size: 2rem;
+  }
+  .contenu-bloc-prestations p {
+    margin: 10px;
+  }
+.contenu-bloc-prestations a {
+  margin-top: 15px;
+}
+
+/*regles technologies*/
+.carte-technologies {
+  min-height: 100px;
+}
+.carte-technologies img {
+  height: 70px;
+}
+
+/*regles témoignages*/
+.testimonials-slider {
+  width: 80%;
+}
+
+/*regles footer*/
+footer {
+  padding: 50px 0;
+}
+
+}
+
+
+/*TABLETTES-------------------------------------------------------------------*/
+@media only screen and (min-width:768px) {
+
+
+}
+
+
+/*SMALL DESKTOP---------------------------------------------------------------*/
+@media only screen and (min-width:992px) {
+
+
+}
+
+
+/*LARGE DESKTOP---------------------------------------------------------------*/
+@media only screen and (min-width:1200px) {
+
+
+}

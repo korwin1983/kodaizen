@@ -7,14 +7,22 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #878787;
 }
+.row {
+  margin: 0;
+}
 .equal-row {
   display: flex;
+  flex-wrap: wrap;
 }
 section {
   padding-bottom: 100px;
 }
 ul {
   list-style: none;
+}
+a, a:hover {
+  text-decoration: none;
+  color: inherit;
 }
 .container-fluid {
   padding: 0;
@@ -25,16 +33,6 @@ ul {
   display: flex;
 }
 .separation svg {
-}
-h1:hover {
-animation: pulse 2s infinite;
-transform-origin: center;
-}
-
-@keyframes pulse {
-    0% {transform: scale(1,1);}
-    50% {transform: scale(1.05,1.05);}
-    100% {transform: scale(1,1);}
 }
 .box-h2 {
   display: flex;
@@ -56,14 +54,40 @@ h2::after {
   position: absolute;
   width: 100%;
   border-bottom: solid 2px #3aaa35;
-  bottom: -5px;
+  bottom: -15px;
   left: 0;
   transform: scaleX(0.6);
   transform-origin: center;
 }
+.bouton-remonter {
+  width: 50px;
+  height: 50px;
+  background-color: #3aaa35;
+  position: fixed;
+  bottom: -60px;
+  right: 30px;
+  z-index: 6000;
+  transition: bottom ease-in 0.3s;
+
+}
+.bouton-remonter img {
+  margin-left: 15%;
+  margin-top: 15%;
+  width: 70%;
+  height: 70%;
 
 
-/*REGLES HEADER*/
+}
+.bouton-remonter:hover {
+  cursor: pointer;
+}
+.show {
+  /*visibility: visible;*/
+  bottom: 30px;
+}
+
+/*REGLES HEADER---------------------------------------------------------------*/
+
 .header {
   background-color: #ededed;
 }
@@ -71,8 +95,13 @@ h2::after {
   background-color: #3aaa35;
   height: 50px;
   display: flex;
+  z-index: 5000;
 }
-.top span {
+.top {
+  width: 100%;
+  z-index: 6000;
+}
+.top .mail, .top .phone, .top .social {
   display: block;
   float: left;
   margin-left: 30px;
@@ -85,10 +114,17 @@ h2::after {
   color: #fff;
   font-weight: 400;
 }
-.top span i {
-  margin-left: 10px;
+.top .mail a, .top .phone a {
+  display: flex;
+}
+.top .mail img, .top .phone img {
   margin-right: 10px;
 }
+.top .mail span, .top .phone span {
+  line-height: 24px;
+  display: block;
+}
+
 .top .social a img {
   height: 20px;
   margin-left: 20px;
@@ -99,6 +135,10 @@ h2::after {
 .header h1 a img {
   width: 200px;
 }
+#titre-menu-mobile, #fermeture-menu-mobile, #bouton-menu-mobile {
+  display: none;
+}
+
 .header ul {
   float: right;
   padding: 30px;
@@ -139,7 +179,7 @@ h2::after {
   color: #3aaa35;
 }
 
-/*REGLES PRESTATIONS*/
+/*REGLES PRESTATIONS----------------------------------------------------------*/
 
 #prestations .row div {
   padding: 0;
@@ -152,6 +192,7 @@ h2::after {
   color: inherit;
   padding: 30px;
   height: 100%;
+  display: flex;
 }
 .contenu-bloc-prestations {
   background-color: rgba(255, 255, 255, 0.85);
@@ -159,13 +200,19 @@ h2::after {
   flex-direction: column;
   box-sizing: border-box;
   opacity: 0;
+  border-radius: 3px;
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .contenu-bloc-prestations h3 {
-text-align: center;
-text-decoration: none;
-text-transform: uppercase;
-font-size: 3rem;
-color: #3aaa35;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #3aaa35;
+  padding: 0 10px;
 }
 .contenu-bloc-prestations img {
   height: 150px;
@@ -173,16 +220,29 @@ color: #3aaa35;
 }
 .contenu-bloc-prestations p {
   display: block;
-text-decoration: none;
-/*padding: 15px;*/
-border-left: solid 2px #3aaa35;
-box-sizing: border-box;
-margin: 30px;
-padding-left: 10px;
+  text-decoration: none;
+  /*padding: 15px;*/
+  border-left: solid 2px #3aaa35;
+  box-sizing: border-box;
+  margin: 30px;
+  padding-left: 10px;
+}
+.contenu-bloc-prestations a {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+
+  background-color: #3aaa35;
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 #site-vitrine {
-  background-image: url('img/vitrine.jpg');
+  background-image: url('../img/vitrine.jpg');
   background-position: center;
   background-size: cover;
 }
@@ -191,7 +251,7 @@ padding-left: 10px;
   transition: opacity 0.25s;
 }
 #e-commerce {
-  background-image: url('img/e-commerce.jpeg');
+  background-image: url('../img/e-commerce.jpeg');
   background-position: center;
   background-size: cover;
 }
@@ -200,7 +260,7 @@ padding-left: 10px;
   transition: opacity 0.25s;
 }
 #dev {
-  background-image: url('img/code.jpg');
+  background-image: url('../img/code.jpg');
   background-position: center;
   background-size: cover;
 }
@@ -209,15 +269,29 @@ padding-left: 10px;
   transition: opacity 0.25s;
 }
 
-/*REGLES SERVICES*/
+/*REGLES SERVICES-------------------------------------------------------------*/
 #services {
   background-color: #ededed;
 }
+
 .bloc-service {
+  /*border-bottom: solid 2px #3aaa35;*/
+  box-sizing: border-box;
+  /*margin-left: 15px;
+  margin-right: 15px;*/
+  padding: 0;
+  padding: 0px 15px;
+}
+
+.bloc-service .line {
+  height: 2px;
+  width: 100%;
+  background-color: #3aaa35;
 
 }
 .bloc-service-top {
   display: flex;
+  margin-bottom: 10px;
 }
 .bloc-service-top img {
   width: 50px;
@@ -244,12 +318,58 @@ padding-left: 10px;
   display: block;
   text-align: justify;
   padding: 0;
-  border-bottom: solid 2px #3aaa35;
+
   padding-bottom: 10px;
 }
 
-/*REGLES COMPETENCES*/
-.carte-competences {
-  min-height: 200px;
-  background-color: #3aaa35;
+/*REGLES TECHNOLOGIES---------------------------------------------------------*/
+
+#technologies .row {
+  margin: 0;
+}
+.carte-technologies {
+  min-height: 300px;
+  /*background-color: #3aaa35;*/
+  display: flex;
+}
+
+.carte-technologies img {
+  height: 150px;
+  margin: auto;
+}
+
+/*REGLES TEMOIGNAGES---------------------------------------------------------*/
+
+#temoignages {
+  background-color: #ededed;
+}
+.testimonials-slider {
+  width: 70%;
+  margin: auto;
+}
+.slick-slide {
+  padding: 50px;
+  box-sizing: border-box;
+  width: 300px;
+}
+.slick-prev:before, .slick-next:before {
+  color:  #3aaa35;
+  font-size: 35px;
+}
+.slick-slide p {
+  display: block;
+}
+.slick-slide span {
+  display: block;
+  color: #3aaa35;
+  margin-top: 15px;
+}
+
+/*REGLES FOOTER---------------------------------------------------------------*/
+
+footer {
+  background-color: #878787;
+  padding: 100px 0;
+  color: #fff;
+  text-align: center;
 }
