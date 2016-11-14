@@ -8,9 +8,9 @@
   section {
     padding-bottom: 50px;
   }
-.separation svg {
-  height: 30px;
-}
+  .separation svg {
+    height: 30px;
+  }
   /*regles header*/
 
   .top .mail, .top .phone {
@@ -33,15 +33,15 @@
     width: 100%;
     margin: 0px 10px;
   }
-#filtre-menu-mobile {
-  display: none;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  background-color: #000;
-  opacity: 0.6;
-  z-index: 10000;
-}
+  #filtre-menu-mobile {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.6;
+    z-index: 10000;
+  }
 
   .menu {
     position: fixed;
@@ -49,7 +49,7 @@
     right: -200px;
     top: 0px;
     height: 100%;
-    background-color: #3aaa35;
+    background-color: #fff;
     z-index: 10000;
     transition: all ease-in 0.3s;
   }
@@ -65,7 +65,7 @@
   #titre-menu-mobile {
     display: block;
     text-transform: uppercase;
-    color: #fff;
+    color: #3aaa35;
     text-align: center;
     font-size: 2rem;
     margin-top: 50px;
@@ -87,20 +87,21 @@
   .menu ul li {
     text-align: center;
     padding: 10px 0;
-    border-top: solid 1px #fff;
+    border-top: solid 1px #3aaa35;
     display: flex;
   }
   .menu ul li:last-child {
-    border-bottom: solid 1px #fff;
+    border-bottom: solid 1px #3aaa35;
   }
   .menu ul li a {
-color: #fff;
-margin-right: 0;
-display: block;
-margin: auto;
-margin-top: auto;
-margin-bottom: auto;
+    color: #878787;
+    margin-right: 0;
+    display: block;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
   }
+
 
   /*regles prestations*/
 
@@ -116,27 +117,27 @@ margin-bottom: auto;
   .contenu-bloc-prestations p {
     margin: 10px;
   }
-.contenu-bloc-prestations a {
-  margin-top: 15px;
-}
+  .contenu-bloc-prestations a {
+    margin-top: 15px;
+  }
 
-/*regles technologies*/
-.carte-technologies {
-  min-height: 100px;
-}
-.carte-technologies img {
-  height: 70px;
-}
+  /*regles technologies*/
+  .carte-technologies {
+    min-height: 100px;
+  }
+  .carte-technologies img {
+    height: 70px;
+  }
 
-/*regles témoignages*/
-.testimonials-slider {
-  width: 80%;
-}
+  /*regles témoignages*/
+  .testimonials-slider {
+    width: 80%;
+  }
 
-/*regles footer*/
-footer {
-  padding: 50px 0;
-}
+  /*regles footer*/
+  footer {
+    padding: 50px 0;
+  }
 
 }
 
@@ -150,6 +151,25 @@ footer {
 
 /*SMALL DESKTOP---------------------------------------------------------------*/
 @media only screen and (min-width:992px) {
+  /*regles header*/
+  .header ul  li a::after {
+    content: "";
+    display: block;
+    transition: transform .2s cubic-bezier(.165,.84,.44,1),-webkit-transform .2s cubic-bezier(.165,.84,.44,1);
+    box-sizing: border-box;
+    border-bottom: solid 3px #3aaa35;
+    width: 100%;
+    position: absolute;
+    bottom: -3px;
+    right: 0;
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+  .header ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
 
 
 }

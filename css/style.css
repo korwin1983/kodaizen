@@ -153,24 +153,7 @@ h2::after {
   margin-right: 20px;
   position: relative;
 }
-.header ul  li a::after {
-  content: "";
-  display: block;
-  transition: transform .2s cubic-bezier(.165,.84,.44,1),-webkit-transform .2s cubic-bezier(.165,.84,.44,1);
-  box-sizing: border-box;
-  border-bottom: solid 3px #3aaa35;
-  width: 100%;
-  position: absolute;
-  bottom: -3px;
-  right: 0;
-  height: 100%;
-  transform: scaleX(0);
-  transform-origin: right;
-}
-.header ul li a:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
-}
+
 .header .intro {
   display: block;
   width: calc(100%/3);
@@ -195,7 +178,7 @@ h2::after {
   display: flex;
 }
 .contenu-bloc-prestations {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 1);
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -213,19 +196,30 @@ h2::after {
   font-size: 3rem;
   color: #3aaa35;
   padding: 0 10px;
+  margin-top: 30px;
 }
-.contenu-bloc-prestations img {
-  height: 150px;
-  margin-top: 15px;
+.contenu-bloc-prestations .box-picto {
+  display: flex;
+  background-color: #ededed;
+}
+.contenu-bloc-prestations .box-picto img {
+margin-left: auto;
+margin-right: auto;
+margin-top: 30px;
+margin-bottom: 30px;
 }
 .contenu-bloc-prestations p {
   display: block;
   text-decoration: none;
   /*padding: 15px;*/
-  border-left: solid 2px #3aaa35;
+  /*border-left: solid 2px #3aaa35;*/
   box-sizing: border-box;
   margin: 30px;
-  padding-left: 10px;
+  margin-top: 0;
+
+  text-align: justify;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .contenu-bloc-prestations a {
   display: block;

@@ -1,6 +1,6 @@
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^webdesign31.fr$
-RewriteRule ^(.*) http://www.webdesign31.fr/$1 [QSA,L,R=301]
+RewriteEngine off
+RewriteCond %{HTTP_HOST} ^kodaizen.fr$
+RewriteRule ^(.*) http://www.kodaizen.fr/$1 [QSA,L,R=301]
 
 ##	activation ZEND optimizer
 SetEnv ZEND_OPTIMIZER 1
