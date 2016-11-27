@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900" rel="stylesheet">
   <!-- Slick carroussel-->
   <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css"/>
@@ -26,10 +27,10 @@
   <![endif]-->
 </head>
 <body>
-<div id="filtre-menu-mobile"></div>
-<div class="bouton-remonter">
-  <img src="img/ic_arrow_up.svg" alt="up">
-</div>
+  <div id="filtre-menu-mobile"></div>
+  <div class="bouton-remonter">
+    <img src="img/ic_arrow_up.svg" alt="up">
+  </div>
 
 
   <div class="container-fluid">
@@ -47,7 +48,7 @@
             </a>
           </span>
           <span class="social"><a href="https://www.facebook.com/kodaizen/" target="_blank"><img src="img/facebook-logo.svg" alt="facebook"></a><a href="https://plus.google.com/103256129177204015465/posts" target="_blank"><img src="img/google-plus-logo.svg" alt="google+"></a><a href=""><img src="img/linkedin.svg" alt=""></a></span>
-<img id="bouton-menu-mobile" src="img/ic_menu.svg" alt="">
+          <img id="bouton-menu-mobile" src="img/ic_menu.svg" alt="">
         </div>
       </div>
       <div class="row">
@@ -59,13 +60,13 @@
           <div class="menu">
             <img id="fermeture-menu-mobile" src="img/ic_clear.svg" alt="">
             <span id="titre-menu-mobile">menu</span>
-          <ul>
-            <li><a href="">Accueil</a></li>
-            <li><a href="">Prestations</a></li>
-            <li><a href="">Réalisations</a></li>
-            <li><a href="">A propos</a></li>
-            <li><a href="">Blog</a></li>
-          </ul>
+            <ul>
+              <li><a data-name="accueil" href="">Accueil</a></li>
+              <li><a data-name="prestations" href="">Prestations</a></li>
+              <li><a data-name="realisations" href="">Réalisations</a></li>
+              <li><a data-name="contact" href="">A propos</a></li>
+              <li><a data-name="blog" href="">Blog</a></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -73,76 +74,76 @@
         <div class="col-md-12 intro">
           <p>Guillaume Cartié, développeur web full stack<br>
             Toulouse</p>
+          </div>
         </div>
-      </div>
 
-    </div>
-    <div class="row separation">
-      <svg width="100%" height="100px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-      viewBox="0 0 100 100"  preserveAspectRatio="none">
-      <polygon fill="#ededed" points="0,0 100,0 100,100 0,100"/>
-      <polygon fill="#fff" points="0,100 100,0 100,100 0,100"/>
-    </svg>
-  </div>
-  <section id="prestations">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="box-h2">
-          <h2>Prestations</h2>
-        </div>
       </div>
+      <div class="row separation">
+        <svg width="100%" height="100px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        viewBox="0 0 100 100"  preserveAspectRatio="none">
+        <polygon fill="#ededed" points="0,0 100,0 100,100 0,100"/>
+        <polygon fill="#fff" points="0,100 100,0 100,100 0,100"/>
+      </svg>
     </div>
-
-    <div class="row equal-row">
-      <div class="col-md-4">
-        <div class="bloc-prestations" id="site-vitrine">
-          <div class="contenu-bloc-prestations">
-            <div class="box-picto">
-            <img src="img/store-with-showcase.svg" alt="site vitrine WordPress">
-            </div>
-            <h3>site vitrine WordPress</h3>
-            <p>Le <b>site vitrine</b> permet la présentation de l'activité et
-              des coordonnées de votre entreprise pour améliorer votre <b>visibilité</b>
-              afin de démarcher de <b>nouveaux clients</b>.<br>
-              <b>WordPress</b> est un système de gestion de contenu.
-              Grâce à WordPress vous pourrez modifier le contenu
-              textuel de votre site vitrine sans disposer de connaissances
-              poussées dans le développement web.
-            </p>
-            <a href="">en savoir plus</a>
+    <section id="prestations">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="box-h2">
+            <h2>Prestations</h2>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="bloc-prestations" id="e-commerce">
-          <div class="contenu-bloc-prestations">
-<div class="box-picto">
-            <img src="img/shopping-cart.svg" alt="e-commerce">
-            </div>
-            <h3>site e-commerce</h3>
-            <p>Le <b>site e-commerce</b> permet à vos clients de visualiser,
-              commander, et payer vos produits. Plusieurs moyens de <b>paiement
-                sécurisé</b> sont possibles.<br>
-                Votre site e-commerce peut être réalisé soit avec <b>WordPress</b>, soit avec <b>PrestaShop</b>.
+
+      <div class="row equal-row">
+        <div class="col-md-4">
+          <div class="bloc-prestations" id="site-vitrine">
+            <div class="contenu-bloc-prestations">
+              <div class="box-picto">
+                <img src="img/store-with-showcase.svg" alt="site vitrine WordPress">
+              </div>
+              <h3>site vitrine WordPress</h3>
+              <p>Le <b>site vitrine</b> permet la présentation de l'activité et
+                des coordonnées de votre entreprise pour améliorer votre <b>visibilité</b>
+                afin de démarcher de <b>nouveaux clients</b>.<br>
+                <b>WordPress</b> est un système de gestion de contenu.
+                Grâce à WordPress vous pourrez modifier le contenu
+                textuel de votre site vitrine sans disposer de connaissances
+                poussées dans le développement web.
               </p>
               <a href="">en savoir plus</a>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="bloc-prestations" id="dev">
+          <div class="bloc-prestations" id="e-commerce">
             <div class="contenu-bloc-prestations">
-<div class="box-picto">
-              <img src="img/code.svg" alt="développement sur mesure">
+              <div class="box-picto">
+                <img src="img/shopping-cart.svg" alt="e-commerce">
               </div>
-              <h3>développement sur mesure</h3>
-              <p><b>Application web</b>, interface d'administration.<br>
-                 Module ou fonctionnalité spécifique de votre site.<br>
-                 Utilisation d'<b>API</b> et <b>services web</b> comme par exemple une <b>API Google</b> ou l'API d'un <b>CRM</b>.<br>
-                Interactivité et animations multimédia : Actions ou éléments visuels supplémentaires lors d'une action de
-                l'utilisateur (scroll, inactivité, clic, survol d'un élément, pression sur smartphone etc...).
-              </p>
-              <a href="">en savoir plus</a>
+              <h3>site e-commerce</h3>
+              <p>Le <b>site e-commerce</b> permet à vos clients de visualiser,
+                commander, et payer vos produits. Plusieurs moyens de <b>paiement
+                  sécurisé</b> sont possibles.<br>
+                  Votre site e-commerce peut être réalisé soit avec <b>WordPress</b>, soit avec <b>PrestaShop</b>.
+                </p>
+                <a href="">en savoir plus</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="bloc-prestations" id="dev">
+              <div class="contenu-bloc-prestations">
+                <div class="box-picto">
+                  <img src="img/code.svg" alt="développement sur mesure">
+                </div>
+                <h3>développement sur mesure</h3>
+                <p><b>Application web</b>, interface d'administration.<br>
+                  Module ou fonctionnalité spécifique de votre site.<br>
+                  Utilisation d'<b>API</b> et <b>services web</b> comme par exemple une <b>API Google</b> ou l'API d'un <b>CRM</b>.<br>
+                  Interactivité et animations multimédia : Actions ou éléments visuels supplémentaires lors d'une action de
+                  l'utilisateur (scroll, inactivité, clic, survol d'un élément, pression sur smartphone etc...).
+                </p>
+                <a href="">en savoir plus</a>
               </div>
             </div>
           </div>
@@ -270,60 +271,63 @@
     </svg>
   </div>
 
-  </div>
-  <section id="temoignages">
+</div>
+<section id="temoignages">
   <div class="container">
 
-      <div class="row">
-        <div class="col-md-12">
-          <div class="box-h2">
-            <h2>Témoignages</h2>
-          </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="box-h2">
+          <h2>Témoignages</h2>
         </div>
       </div>
-      <div class="row">
+    </div>
+    <div class="row flex-column">
       <div class="testimonials-slider">
-  			<div>
-  				<p>je suis... LA NUIT</p>
-  				<span>Batman</span>
-  			</div>
-  			<div>
-  				<p>M'enfin!</p>
-  					<span>Gaston Lagaffe</span>
-  				</div>
-  			</div>
-</div>
+        <div>
+          <p>je suis... LA NUIT</p>
+          <span>Batman</span>
+        </div>
+        <div>
+          <p>M'enfin!</p>
+          <span>Gaston Lagaffe</span>
+        </div>
+      </div>
+      <!-- <a href="" class="button">Laisser un commentaire</a> -->
+    </div>
 
   </div>
-  </section>
+</section>
 
-  <footer>
-<div class="container">
-  <div class="col-md-12">
-    <p>KODAIZEN © 2016 Tous droits réservés</p>
-    <a href="#">mentions légales</a>
+<footer>
+  <div class="container">
+    <div class="col-md-12">
+      <p>KODAIZEN © 2016 Tous droits réservés</p>
+      <a href="#">mentions légales</a>
+    </div>
   </div>
-</div>
 
-  </footer>
+</footer>
 
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-69333288-2', 'auto');
-    ga('send', 'pageview');
+ga('create', 'UA-69333288-2', 'auto');
+ga('send', 'pageview');
 
-  </script>
+var currentPage = "accueil";
 
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
+</script>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
-  <script src="js/main.js" charset="utf-8"></script>
+<script src="js/main.js" charset="utf-8"></script>
 
 
 

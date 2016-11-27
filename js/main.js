@@ -2,6 +2,7 @@ var timeouts = [];
 
 
 
+
 //slider témoignages------------------------------------------------------------
 $(document).ready(function(){
 	$('.testimonials-slider').slick({
@@ -38,6 +39,15 @@ window.addEventListener('scroll', function(){
 		}, 4000));
 	}
 });
+
+//item courant menu------------------------------------------------------------
+var menuLink = document.querySelectorAll('.menu ul li a');
+for (var i = 0; i < menuLink.length; i++) {
+	if (currentPage === menuLink[i].getAttribute("data-name")) {
+		console.log(menuLink[i].getAttribute("data-name"));
+		menuLink[i].classList.add('current-link');
+	}
+}
 
 
 
@@ -84,8 +94,5 @@ function position(elem) {
 		left += elem.offsetLeft-elem.scrollLeft;
 		top += elem.offsetTop-elem.scrollTop;
 	} while ( elem = elem.offsetParent );
-
 	return [ left, top ];
-	// console.log('top: '+top);
-	// console.log('test');
 }
