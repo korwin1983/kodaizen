@@ -12,10 +12,8 @@
       </div>
     </div>
     <div class="row">
-    <div class="col-md-12">
-      <div class="img">
-
-      </div>
+    <div class="col-md-12 mobile-no-padding">
+      <div class="img"></div>
     </div>
     </div>
     <div class="row">
@@ -60,7 +58,11 @@
           </div>
         </div>
       </div>
-      
+      <div class="row">
+      <div class="col-md-12 mobile-no-padding">
+        <div class="img"></div>
+      </div>
+      </div>
       <div class="row">
         <div class="col-md-12">
           <p>Le site e-commerce permet d'exposer et vendre vos produits à un grand nombre de clients potentiels.

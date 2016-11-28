@@ -40,9 +40,11 @@
             <textarea name="message" rows="8" cols="80"></textarea>
             <input class="button" type="submit" name="" value="valider">
             <p>* champs obligatoires</p>
+              <p class="info"></p>
           </div>
         </form>
       </div>
+
     </div>
   </div>
 </section>

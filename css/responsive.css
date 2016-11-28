@@ -11,6 +11,9 @@
   .separation svg {
     height: 30px;
   }
+  .mobile-no-padding {
+    padding: 0;
+  }
   /*regles header*/
 
   .top .mail, .top .phone {
@@ -138,8 +141,14 @@
   /*regles témoignages*/
   .testimonials-slider {
     width: 70%;
-
   }
+
+/* regles page prestation */
+#prestation-site-ecommerce .img, #prestation-site-vitrine .img {
+  height:300px;
+}
+
+
 
   /*regles footer*/
   footer {

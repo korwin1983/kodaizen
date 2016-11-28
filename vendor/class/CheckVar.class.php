@@ -2,7 +2,6 @@
 class CheckVar {
 
 
-
   private $_text_pattern = "/^[a-zA-Z éçèêùâà-]+$/";
   private $_email_pattern = "/^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/";
   private $_phone_pattern = "/^0[1-68][0-9]{8}$/";
@@ -11,19 +10,18 @@ class CheckVar {
 
   public function checkText($var, $empty){
     if (isset($var) && (strlen(trim($var)) > 0)) {
-
-      $out['result'] = TRUE;
-      $out['value'] = htmlspecialchars($var);
+        $out['result'] = TRUE;
+        $out['value'] = htmlspecialchars($var);
     }
     else {
-if ($empty) {
-  $out['result'] = TRUE;
-  $out['value'] = htmlspecialchars($var);
-}
-else {
-  $out['result'] = FALSE;
-  $out['message'] = "La variable est non définie ou vide.<br>";
-}
+      if ($empty) {
+        $out['result'] = TRUE;
+        $out['value'] = htmlspecialchars($var);
+      }
+      else {
+        $out['result'] = FALSE;
+        $out['message'] = "La variable est non définie ou vide.";
+      }
 
     }
     return $out;
@@ -32,12 +30,19 @@ else {
   public function checkName($var, $empty){
     if (isset($var) && (strlen(trim($var)) > 0)) {
       if ((strlen(trim($var)) < 30)) {
-        $out['result'] = TRUE;
-        $out['value'] = htmlspecialchars($var);
+        if (preg_match("/^[a-zA-Z éçèêùâà-]+$/", $var)) {
+          $out['result'] = TRUE;
+          $out['value'] = htmlspecialchars($var);
+        }
+        else {
+          $out['result'] = FALSE;
+          $out['message'] = "Format incorrect.";
+        }
+
       }
       else {
         $out['result'] = FALSE;
-        $out['message'] = "La variable contient trop de charactères.<br>";
+        $out['message'] = "La variable contient trop de charactères.";
       }
     }
     else {
@@ -47,7 +52,7 @@ else {
       }
       else {
         $out['result'] = FALSE;
-        $out['message'] = "La variable est non définie ou vide.<br>";
+        $out['message'] = "La variable est non définie ou vide.";
       }
 
     }
@@ -68,12 +73,12 @@ else {
       }
       else {
         $out['result'] = FALSE;
-        $out['message'] = "La variable contient trop de charactères.<br>";
+        $out['message'] = "La variable contient trop de charactères.";
       }
     }
     else {
       $out['result'] = FALSE;
-      $out['message'] = "La variable est non définie ou vide.<br>";
+      $out['message'] = "La variable est non définie ou vide.";
     }
     return $out;
   }
@@ -87,17 +92,17 @@ else {
         }
         else {
           $out['result'] = FALSE;
-          $out['message'] = "Format incorrect.<br>";
+          $out['message'] = "Format incorrect.";
         }
       }
       else {
         $out['result'] = FALSE;
-        $out['message'] = "La variable contient trop de charactères.<br>";
+        $out['message'] = "La variable contient trop de charactères.";
       }
     }
     else {
       $out['result'] = FALSE;
-      $out['message'] = "La variable doit contenir au minimum 8 charactères.<br>";
+      $out['message'] = "La variable doit contenir au minimum 8 charactères.";
     }
     return $out;
   }
@@ -112,7 +117,7 @@ else {
       }
       else {
         $out['result'] = FALSE;
-        $out['message'] = "Format incorrect.<br>";
+        $out['message'] = "Format incorrect.";
       }
     }
     else {
@@ -122,37 +127,37 @@ else {
       }
       else {
         $out['result'] = FALSE;
-        $out['message'] = "La variable est non définie ou vide.<br>";
+        $out['message'] = "La variable est non définie ou vide.";
       }
 
     }
     return $out;
   }
 
-public function checkPhone($var, $empty){
+  public function checkPhone($var, $empty){
 
-  if (isset($var) && (strlen(trim($var)) > 0)) {
-    if (preg_match("/^0[1-68][0-9]{8}$/", $var)) {
-      $out['result'] = TRUE;
-      $out['value'] = htmlspecialchars($var);
+    if (isset($var) && (strlen(trim($var)) > 0)) {
+      if (preg_match("/^0[1-68][0-9]{8}$/", $var)) {
+        $out['result'] = TRUE;
+        $out['value'] = htmlspecialchars($var);
+      }
+      else {
+        $out['result'] = FALSE;
+        $out['message'] = "Format incorrect.";
+      }
     }
     else {
-      $out['result'] = FALSE;
-      $out['message'] = "Format incorrect.<br>";
+      if ($empty) {
+        $out['result'] = TRUE;
+        $out['value'] = htmlspecialchars($var);
+      }
+      else {
+        $out['result'] = FALSE;
+        $out['message'] = "La variable est non définie ou vide.";
+      }
+
     }
+    return $out;
   }
-  else {
-    if ($empty) {
-      $out['result'] = TRUE;
-      $out['value'] = htmlspecialchars($var);
-    }
-    else {
-      $out['result'] = FALSE;
-      $out['message'] = "La variable est non définie ou vide.<br>";
-    }
-
-}
-return $out;
-}
 }
 ?>
