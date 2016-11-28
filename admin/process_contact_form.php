@@ -55,6 +55,15 @@ else {
 
 if ($validate) {
   $out['result'] = TRUE;
+
+
+$sujet = "Formulaire de contact kodaizen";
+$contenu = $first_name." ".$last_name."<br>".$phone."<br>".$email."<br>".$message;
+$headers  = 'MIME-Version: 1.0' . "\r\n";
+$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+mail('guillaume.cartie@gmail.com', $sujet, $contenu, $headers);
+
+
 }
 else {
   $out['result'] = FALSE;
