@@ -187,7 +187,7 @@
   </div>
 
 </div>
-<section id="temoignages">
+<!-- <section id="temoignages">
   <div class="container">
 
     <div class="row">
@@ -208,11 +208,11 @@
           <span>Gaston Lagaffe</span>
         </div>
       </div>
-      <!-- <a href="" class="button">Laisser un commentaire</a> -->
+
     </div>
 
   </div>
-</section>
+</section> -->
 
 
 

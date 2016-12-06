@@ -1,5 +1,5 @@
 <?php include('header.php') ?>
-<div class="container-fluid">
+<div class="container">
   <section id="contact-maps">
     <div class="row">
       <div class="col-md-12">
@@ -14,9 +14,7 @@
       </div>
     </div>
   </section>
-</div>
 <section id="contact-form">
-  <div class="container">
     <div class="row">
       <div class="col-md-12">
         <p>Et si on discutait de votre projet?</p>

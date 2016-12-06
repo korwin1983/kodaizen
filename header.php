@@ -16,6 +16,7 @@
   <!-- Slick carroussel-->
   <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="vendor/kodaizen_slider/style.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
 
@@ -47,7 +48,7 @@
               <img src="img/ic_phone_android.svg" alt=""><span>06 51 83 54 06</span>
             </a>
           </span>
-          <span class="social"><a href="https://www.facebook.com/kodaizen/" target="_blank"><img src="img/facebook-logo.svg" alt="facebook"></a><a href="https://plus.google.com/103256129177204015465/posts" target="_blank"><img src="img/google-plus-logo.svg" alt="google+"></a><a href=""><img src="img/linkedin.svg" alt=""></a></span>
+          <span class="social"><a href="https://www.facebook.com/kodaizen/" target="_blank"><img src="img/facebook-logo.svg" alt="facebook"></a><a href="https://plus.google.com/103256129177204015465/posts" target="_blank"><img src="img/google-plus-logo.svg" alt="google+"></a><a href="https://fr.linkedin.com/in/guillaume-carti%C3%A9-227a81114" target="_blank"><img src="img/linkedin.svg" alt=""></a></span>
           <img id="bouton-menu-mobile" src="img/ic_menu.svg" alt="">
         </div>
       </div>
@@ -63,9 +64,9 @@
             <ul>
               <li><a data-name="accueil" href="index.php">Accueil</a></li>
               <li><a data-name="prestations" href="prestations.php">Prestations</a></li>
-              <li><a data-name="realisations" href="">Réalisations</a></li>
+              <li><a data-name="realisations" href="realisations.php">Réalisations</a></li>
               <li><a data-name="contact" href="contact.php">Contact</a></li>
-              <li><a data-name="blog" href="">Blog</a></li>
+              <!-- <li><a data-name="blog" href="http://localhost/kodaizen_blog/">Blog</a></li> -->
             </ul>
           </div>
         </div>
