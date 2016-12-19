@@ -3,7 +3,7 @@ $output = '';
 $output .= '<div class="title-module-wrap page-title-module-custom"><div class="be-wrap clearfix">';
 $output .= '<div class="left page-title-custom">';
 ob_start();
-// get_template_part( 'page', 'title' );
+get_template_part( 'page', 'title' );
 $output .= ob_get_contents();
 ob_end_clean();
 $output .= '</div>';

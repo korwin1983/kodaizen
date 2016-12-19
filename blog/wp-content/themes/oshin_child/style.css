@@ -107,10 +107,16 @@ color: #fff;
 clear: both;
 display: block;
 }
-.title-module-wrap {
+.title-module-wrap .be-wrap {
   display: flex;
   align-items: center;
+  width: 100%;
+  flex-direction: column;
 }
+.title-module-wrap .page-title-custom {
+  float: left!important;
+}
+
 
 .more-link {
   text-transform: uppercase;
@@ -138,6 +144,24 @@ padding: 5px 10px;
 .footer-content-inner-center {
   background-color: #575756;
   padding: 100px 0;
+}
+
+.breadcrumbs {
+  font-size: 20px;
+  align-self: flex-start;
+  margin-top: 60px;
+  width: 100%;
+  flex-grow: 1;
+  align-content: flex-start;
+}
+
+.right-sidebar-page {
+  padding-top: 20px!important;
+}
+.header-breadcrumb {
+  flex-grow: 1;
+  flex-shrink: 0;
+  width: 100%;
 }
 
 /*RESPONSIVE------------------------------------------------------------------*/

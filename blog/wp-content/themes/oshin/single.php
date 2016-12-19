@@ -14,9 +14,6 @@ $content_single_sidebar = ( isset($sidebar_flag) && '1' != $sidebar_flag) ? '' :
 $enable_breadcrumb = ( isset($be_themes_data['enable_breadcrumb']) && 1 == $be_themes_data['enable_breadcrumb']) ? 1 : 0;
 ?>
 
-
-
-
 <?php
 
 
@@ -28,7 +25,7 @@ while ( have_posts() ) : the_post(); ?>
 	}?>
 	<section id="content" class="<?php echo esc_attr( $sidebar ); ?>-sidebar-page">
 		<div id="content-wrap" class="be-wrap clearfix">
-			<a class="kodaizen-button" href="<?php echo get_site_url(); ?>">Accueil</a>
+			<!-- <a class="kodaizen-button" href="<?php echo get_site_url(); ?>">Accueil</a> -->
 			<i class="clear-float"></i>
 			<section id="page-content" class=" <?php echo $content_single_sidebar; ?> ">
 				<div class="clearfix <?php echo esc_attr( $blog_style ); ?>-blog">

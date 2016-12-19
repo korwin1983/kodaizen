@@ -163,7 +163,6 @@ p{
   cursor: pointer;
 }
 .show {
-  /*visibility: visible;*/
   bottom: 30px;
 }
 .button {
@@ -191,9 +190,7 @@ p{
 /*REGLES HEADER---------------------------------------------------------------*/
 
 .header {
-  /*background-color: #ededed;*/
   background-color: #f2f3f8;
-
 }
 .top {
   background-color: #3aaa35;
@@ -351,13 +348,10 @@ p{
 .contenu-bloc-prestations p {
   display: block;
   text-decoration: none;
-  /*padding: 15px;*/
-  /*border-left: solid 2px #3aaa35;*/
   box-sizing: border-box;
   margin: 30px;
   margin-top: 0;
-
-  text-align: justify;
+  text-align: left;
   padding-left: 15px;
   padding-right: 15px;
 }
