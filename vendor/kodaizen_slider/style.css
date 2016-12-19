@@ -11,11 +11,12 @@
   width: 100%;
   margin: auto;
   margin-top: 50px;
-  height: 500px;
   margin-bottom: 50px;
+  width: 100%;
+  height: 500px
 }
 .kd-header-slider {
-  height: 50px;
+  min-height: 50px;
   background-color: #575756;
   color: #fff;
 line-height: 50px;
@@ -94,7 +95,7 @@ line-height: 50px;
   background-image: url("img/ic_next.svg");
   background-repeat: no-repeat;
   background-position: center;
-  z-index: 10000;
+  z-index: 5000;
 }
 .kd-slide-btn:hover {
   cursor: pointer;
@@ -113,12 +114,43 @@ line-height: 50px;
 /*FULLSCREEN------------------------------------------------------------------*/
 .kd-slider-container:-webkit-full-screen {
   width: 100%;
-  height: 100%;
+  height: 100% !important;
   background-color: black;
 }
 
-.kd-slider-container:-webkit-full-screen {
-  width: 100%;
-  height: 100%;
-  background-color: black;
+
+
+/*RESPONSIVE------------------------------------------------------------------*/
+
+/*smartphones et tablettes*/
+@media only screen and (max-width:991px) {
+  .kd-slide-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: #3aaa35;
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    background-image: url("img/ic_next.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 5000;
+  }
+  .kd-slider-preview-btn {
+    left: 10px;
+  }
+  .kd-slider-next-btn {
+    right: 10px;
+  }
+.kd-title-slide {
+  font-size: 0.8em;
+  width: 60%;
+  line-height: 25px;
+}
+.kd-slider-container {
+  height: 300px;
+}
+
+
 }

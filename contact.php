@@ -1,4 +1,6 @@
-<?php include('header.php') ?>
+<?php
+$page_title = "Contact";
+include('header.php') ?>
 <div class="container">
   <section id="contact-maps">
     <div class="row">

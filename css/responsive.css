@@ -1,6 +1,6 @@
 
 /*SMARTPHONES-----------------------------------------------------------------*/
-@media only screen and (max-width:767px) {
+@media only screen and (max-width:991px) {
   /*regles generales*/
   h2 {
     font-size: 4rem;
@@ -116,12 +116,14 @@
 
   .contenu-bloc-prestations {
     opacity: 1;
+    width: 100%;
+    margin: 0;
   }
   .contenu-bloc-prestations img {
-    height: 50px;
+    height: 100px;
   }
   .contenu-bloc-prestations h3 {
-    font-size: 2rem;
+    font-size: 2.3rem;
   }
   .contenu-bloc-prestations p {
     margin: 10px;
@@ -155,14 +157,20 @@
     padding: 50px 0;
   }
 
+/*regles page realisation*/
+#realisations .realisation-title {
+  font-size: 1.5rem;
+}
+
+
 }
 
 
 /*TABLETTES-------------------------------------------------------------------*/
-@media only screen and (min-width:768px) {
+/*@media only screen and (min-width:768px) {
 
 
-}
+}*/
 
 
 /*SMALL DESKTOP---------------------------------------------------------------*/

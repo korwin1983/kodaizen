@@ -68,6 +68,7 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-top: 10px;
 }
 
 .list li:before {
@@ -135,7 +136,7 @@ h2::after {
 }
 
 p{
-  margin-top: 15px;
+  /*margin-top: 15px;*/
 }
 
 .bouton-remonter {
@@ -178,6 +179,7 @@ p{
   text-decoration: none;
   text-transform: uppercase;
   float: left;
+  box-sizing: border-box;
 }
 .button:hover {
   text-decoration: none;
@@ -189,7 +191,9 @@ p{
 /*REGLES HEADER---------------------------------------------------------------*/
 
 .header {
-  background-color: #ededed;
+  /*background-color: #ededed;*/
+  background-color: #f2f3f8;
+
 }
 .top {
   background-color: #3aaa35;
@@ -206,7 +210,7 @@ p{
   z-index: 6000;
 }
 .top .mail, .top .phone, .top .social {
-  display: block;
+  display: inline-block;
   float: left;
   margin-left: 30px;
   margin-top: auto;
@@ -214,10 +218,12 @@ p{
   color: #fff;
   font-family: 'Roboto', sans-serif;
 }
+
 .top a {
   text-decoration: none;
   color: #fff;
   font-weight: 400;
+  float: left;
 }
 .top .mail a, .top .phone a {
   display: -webkit-box;
@@ -292,6 +298,9 @@ p{
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  float: left;
+  height: 100%;
+  width: 100%;
 }
 .contenu-bloc-prestations {
   background-color: rgba(255, 255, 255, 1);
@@ -333,6 +342,11 @@ p{
   margin-right: auto;
   margin-top: 30px;
   margin-bottom: 30px;
+  min-width: 50px;
+  min-height: 50px;
+  -webkit-flex-basis: 150px;
+      -ms-flex-preferred-size: 150px;
+          flex-basis: 150px;
 }
 .contenu-bloc-prestations p {
   display: block;
@@ -358,6 +372,17 @@ p{
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
+-webkit-flex-basis: fill;
+    -ms-flex-preferred-size: fill;
+        flex-basis: fill;
+-webkit-box-flex: 0;
+-webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+        flex-grow: 0;
+-webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+        flex-shrink: 0;
+
 }
 
 #site-vitrine {
@@ -393,16 +418,14 @@ p{
 
 /*REGLES SERVICES-------------------------------------------------------------*/
 #services {
-  background-color: #ededed;
+  background-color: #f2f3f8;
 }
 
 .bloc-service {
-  /*border-bottom: solid 2px #3aaa35;*/
   box-sizing: border-box;
-  /*margin-left: 15px;
-  margin-right: 15px;*/
   padding: 0;
   padding: 0px 15px;
+  float: left;
 }
 
 .bloc-service .line {
@@ -471,7 +494,7 @@ p{
 /*REGLES TEMOIGNAGES---------------------------------------------------------*/
 
 #temoignages {
-  background-color: #ededed;
+  background-color: #f2f3f8;
 }
 .testimonials-slider {
   width: 70%;
@@ -506,6 +529,8 @@ p{
   height: 500px;
   background-size: cover;
   background-position: center;
+  margin-bottom: 30px;
+
 }
 #prestation-site-vitrine .img {
   background-image: url('../img/mockup/mock-3.jpg');
@@ -561,6 +586,9 @@ p{
   background-color: #575756;
   margin: 0;
   height: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
 
@@ -571,6 +599,9 @@ p{
   min-height: 300px;
   /*background-color: grey;*/
   color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -586,9 +617,11 @@ p{
   position: absolute;
   right: 10px;
   top: 10px;
-  z-index: 10000;
+  z-index: 5000;
   /*opacity: 0.6;*/
-  flex-shrink: 0;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
   background-image: url('../img/ic_add.svg');
   background-repeat: no-repeat;
   background-position: center;
@@ -596,7 +629,7 @@ p{
 #realisations .realisation-title {
   display: block;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.7rem;
   text-transform: uppercase;
   color: #fff;
   margin-top: auto;
@@ -613,9 +646,18 @@ p{
   height: 100%;
   width: 100%;
   left: -100%;
+  -webkit-transition: all ease-in 0.2s;
   transition: all ease-in 0.2s;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+          align-items: center;
 }
 /*#realisations article:hover .content {
 left: 0;
@@ -642,6 +684,7 @@ margin-top: 30px;
 #realisations article .content a {
   margin-left: auto;
   margin-right: auto;
+  float: left;
 }
 #mps {
   background-image: url("../img/realisations/mps/mockup_mps.jpg");
@@ -656,13 +699,14 @@ margin-top: 30px;
   display: block;
   text-transform: uppercase;
   font-weight: 300;
-  /*margin-bottom: 15px;*/
   color: #3aaa35;
-  margin-top: 15px;
+  margin-top: 20px;
 }
-#realisation .button {
-
-
+#realisation .partenaires {
+  display: block;
+}
+#realisation .info {
+  margin-top: 20px;
 }
 
 
@@ -686,7 +730,7 @@ margin-top: 30px;
 .form-box {
   /*width: 100%;*/
   /*margin: auto;*/
-  background-color: #ededed;
+  background-color: #f2f3f8;
   padding: 10px 30px 20px 30px;
 }
 .form-box label {

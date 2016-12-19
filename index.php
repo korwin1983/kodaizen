@@ -1,4 +1,8 @@
-<?php include('header.php') ?>
+<?php
+$page_title = "Accueil";
+
+
+ include('header.php') ?>
 
     <section id="prestations">
       <div class="row">
@@ -69,7 +73,7 @@
         <svg width="100%" height="100px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         viewBox="0 0 100 100"  preserveAspectRatio="none">
         <polygon fill="#fff" points="0,0 100,0 100,100 0,100"/>
-        <polygon fill="#ededed" points="0,100 100,0 100,100 0,100"/>
+        <polygon fill="#f2f3f8" points="0,100 100,0 100,100 0,100"/>
       </svg>
     </div>
   </div>
@@ -125,7 +129,7 @@
       <div class="row separation">
         <svg width="100%" height="100px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         viewBox="0 0 100 100"  preserveAspectRatio="none">
-        <polygon fill="#ededed" points="0,0 100,0 100,100 0,100"/>
+        <polygon fill="#f2f3f8" points="0,0 100,0 100,100 0,100"/>
         <polygon fill="#fff" points="0,100 100,0 100,100 0,100"/>
       </svg>
     </div>
@@ -182,12 +186,12 @@
       <svg width="100%" height="100px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
       viewBox="0 0 100 100"  preserveAspectRatio="none">
       <polygon fill="#fff" points="0,0 100,0 100,100 0,100"/>
-      <polygon fill="#ededed" points="0,100 100,0 100,100 0,100"/>
+      <polygon fill="#f2f3f8" points="0,100 100,0 100,100 0,100"/>
     </svg>
   </div>
 
 </div>
-<!-- <section id="temoignages">
+<section id="temoignages">
   <div class="container">
 
     <div class="row">
@@ -200,19 +204,25 @@
     <div class="row flex-column">
       <div class="testimonials-slider">
         <div>
-          <p>je suis... LA NUIT</p>
-          <span>Batman</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+             sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+              ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          <span>Lorem ipsum</span>
         </div>
         <div>
-          <p>M'enfin!</p>
-          <span>Gaston Lagaffe</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+             eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco
+               laboris nisi ut aliquip ex ea commodo consequat. </p>
+          <span>Lorem ipsum</span>
         </div>
       </div>
 
     </div>
 
   </div>
-</section> -->
+</section>
 
 
 
@@ -226,6 +236,10 @@ ga('create', 'UA-69333288-2', 'auto');
 ga('send', 'pageview');
 
 var currentPage = "accueil";
+
+	// alert('Site en cours de construction.');
+
+
 
 </script>
 

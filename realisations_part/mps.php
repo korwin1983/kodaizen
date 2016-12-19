@@ -24,17 +24,35 @@
           <div class="kd-slider-preview-btn kd-slide-btn"></div>
           <div class="kd-slider-next-btn kd-slide-btn"></div>
           <ul>
-            <li class="media" data-title="titre photo 1">
-              <img src="vendor/kodaizen_slider/picture/img1.jpg" alt="">
+            <li class="media" data-title="Site Web de La Maison Pour La Science">
+              <img src="img/realisations/mps/capture1.jpg" alt="">
             </li>
-            <li class="media" data-title="titre photo 2">
-              <img src="vendor/kodaizen_slider/picture/img2.jpg" alt="">
+            <li class="media" data-title="Lecture de la vidéo avec la barre de menu">
+              <img src="img/realisations/mps/capture3.jpg" alt="">
             </li>
-            <li class="media" data-title="titre photo 3">
-              <img src="vendor/kodaizen_slider/picture/img3.jpg" alt="">
+            <li class="media" data-title="Bouton d'alerte de contenu type diaporama (sans survol de la souris)">
+              <img src="img/realisations/mps/capture2.jpg" alt="">
             </li>
-            <li class="media" data-title="titre photo 4">
-              <img src="vendor/kodaizen_slider/picture/img4.jpg" alt="">
+            <li class="media" data-title="Bouton d'alerte de contenu type site web (avec survol de la souris)">
+              <img src="img/realisations/mps/capture4.jpg" alt="">
+            </li>
+            <li class="media" data-title="Diaporama">
+              <img src="img/realisations/mps/capture8.jpg" alt="">
+            </li>
+            <li class="media" data-title="Une question du quizz">
+              <img src="img/realisations/mps/capture5.jpg" alt="">
+            </li>
+            <li class="media" data-title="Réponse juste du quizz">
+              <img src="img/realisations/mps/capture6.jpg" alt="">
+            </li>
+            <li class="media" data-title="Réponse fausse du quizz">
+              <img src="img/realisations/mps/capture7.jpg" alt="">
+            </li>
+            <li class="media" data-title="Accueil interface d'administration des diaporamas">
+              <img src="img/realisations/mps/admin1.jpg" alt="">
+            </li>
+            <li class="media" data-title="Modification des photos du diaporama">
+              <img src="img/realisations/mps/admin2.jpg" alt="">
             </li>
           </ul>
         </div>
@@ -43,32 +61,54 @@
 
     <div class="row">
       <div class="col-md-12">
-        <strong>développement de l'interactivité de la vidéo</strong>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-          enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-          in reprehenderit in voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-          non proident, sunt in culpa qui officia deserunt mollit
-          anim id est laborum.</p>
-          <ul class="list">
-            <li>item liste</li>
-            <li>item liste</li>
-            <li>item liste</li>
-            <li>item liste</li>
-          </ul>
-<strong>développement de contenu pour la vidéo</strong>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-  enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+        <strong>objectifs</strong>
+        <p>Développement d'une vidéo interactive permettant, au clic sur une
+          icône pendant la lecture, d'afficher du contenu supplémentaire de
+          type diaporama ou site web.</p>
+          <p>Développement d'un quizz avec des questions du domaine scientifique.</p>
+          <p>La vidéo et le quizz permettent de présenter de façon interactive
+            et ludique les activités proposées par La Maison Pour La Science.</p>
+            <p>Éléments fournis : vidéo, photos, maquettes graphiques.</p>
+            <strong>Vidéo interactive</strong>
+            <ul class="list">
+              <li>Contrôle de la vidéo en JavaScript via la balise HTML5 vidéo</li>
+              <li>Chargement du contenu interactif avec jQuery</li>
+              <li>Support du plein écran (API FullScreen)</li>
+              <li>Boutons de partage sur les réseaux sociaux</li>
+              <li>Détection automatique du débit internet pour adapter la qualité de la vidéo</li>
+              <li>Boutons de choix de la qualité vidéo</li>
+            </ul>
 
-<a href="http://www.univ-toulouse.fr/formation/la-maison-pour-la-science-en-midi-pyrenees/la-maison-pour-la-science-web-doc" class="button" target="_blank">VOIR LA VIDEO</a>
+            <strong>Diaporamas</strong>
+            <ul class="list">
+              <li>Développement « from  scratch » des diaporamas</li>
+              <li>Support du plein écran</li>
+              <li>Possibilité d'intégrer des vidéos</li>
+              <li>Mode lecture automatique</li>
+            </ul>
+
+            <strong>interface d'administration</strong>
+            <ul class="list">
+              <li>Ajout et suppression de photos</li>
+              <li>Changement de l'ordre des photos en drag & drop</li>
+              <li>Gestion des utilisateurs</li>
+            </ul>
+
+
+
+            <strong>partenaires</strong>
+            <a class="partenaires" href="http://web-docu.fr/">web-docu.fr</a>
+            <span class="partenaires">Mouton Sandrine, Graphiste</span>
+
+            <p class="info"><i>Pour une meilleure expérience utlisateur, la vidéo interactive
+              est optimisée pour les écrans d'ordinateurs.</i></p>
+
+              <a href="http://www.univ-toulouse.fr/formation/la-maison-pour-la-science-en-midi-pyrenees/la-maison-pour-la-science-web-doc" class="button" target="_blank">VOIR LA VIDEO</a>
+
+
+            </div>
+          </div>
 
 
         </div>
-      </div>
-
-
-    </div>
-  </section>
+      </section>

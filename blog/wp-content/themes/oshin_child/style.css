@@ -1,0 +1,221 @@
+/*
+Theme Name: Oshin Child
+Description: Oshin Child Theme
+Author: Brand Exponents
+Template: oshin
+Version: 1.2
+*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+@import url("../oshin/style.css");
+
+
+/*HEADER----------------------------------------------------------------------*/
+.logo {
+  padding-top: 20px!important;
+margin-left: 45px!important;
+}
+
+.normal-logo {
+  width: 200px;
+margin: 0;
+padding: 0;
+}
+.menu ul {
+  padding: 30px;
+  margin-top: 10px;
+  margin-right: 15px;
+}
+
+#navigation {
+  margin-right: 0!important;
+}
+
+#navigation .menu a:hover {
+color: inherit;
+}
+
+
+#header-top-bar-wrap {
+  height: 50px;
+  display: flex;
+}
+
+#header-top-bar-left  {
+    font-family: 'Roboto', sans-serif;
+    line-height: 24px;
+    font-size: 18px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#header-top-bar-left .mail, #header-top-bar-left .phone {
+  padding-left: 25px;
+  color: #fff;
+}
+
+#header-top-bar-left .mail a img, #header-top-bar-left .phone a img {
+margin-right: 10px;
+}
+
+#header-top-bar-left .mail a span, #header-top-bar-left .phone a span {
+color: #fff;
+}
+
+#header-top-bar-left .social {
+  margin-left: 30px;
+}
+
+#header-top-bar-left .social a img {
+  height: 20px;
+  margin-left: 20px;
+}
+
+.page-title-custom {
+  position: relative;
+  text-align: center;
+  float: none!important;
+}
+.page-title-custom::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  border-bottom: solid 2px #3aaa35;
+  bottom: -15px;
+  left: 0;
+  -webkit-transform: scaleX(0.6);
+  -ms-transform: scaleX(0.6);
+  transform: scaleX(0.6);
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+}
+
+/*BLOG------------------------------------------------------------------------*/
+.kodaizen-button {
+  color: #fff!important;
+  background-color: #3aaa35;
+  border-radius: 3px;
+  display: block;
+  float: left;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  font-weight: 400!important;
+}
+.clear-float {
+clear: both;
+display: block;
+}
+.title-module-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.more-link {
+  text-transform: uppercase;
+  border-radius: 3px;
+  font-weight: 400!important;
+padding: 5px 10px;
+}
+
+.icon-social_facebook:before {
+  color: #3aaa35;
+}
+.icon-social_twitter:before {
+  color: #3aaa35;
+}
+.icon-social_googleplus:before {
+  color: #3aaa35;
+}
+.icon-social_linkedin:before {
+  color: #3aaa35;
+}
+.icon-social_pinterest:before {
+  color: #3aaa35;
+}
+
+.footer-content-inner-center {
+  background-color: #575756;
+  padding: 100px 0;
+}
+
+/*RESPONSIVE------------------------------------------------------------------*/
+
+/*mobiles*/
+@media only screen and (max-width:991px) {
+
+#header-top-bar-wrap {
+  padding: 0!important;
+}
+
+#header-top-bar-left {
+  text-align: left;
+  /*padding: 0!important;*/
+  margin-left: 15px!important;
+  /*margin: 0;*/
+}
+
+  #header-top-bar-left .mail, #header-top-bar-left .phone {
+    margin-left: 10px;
+    margin-top: 15px!important;
+    float: left;
+    padding: 0;
+    margin-top: auto!important;
+    margin-bottom: auto!important;
+  }
+#header-top-bar-left .mail span, #header-top-bar-left .phone span {
+  display: none!important;
+}
+#header-top-bar-left .mail a img, #header-top-bar-left .phone a img {
+  margin: 0 10px!important;
+}
+#header-top-bar-left .social {
+  margin-left: 10px;
+}
+#header-top-bar-left .social img {
+  margin-left: 10px!important;
+}
+.logo {
+  width: 150px;
+  margin-left: 30px!important;
+  padding-top: 15px!important;
+}
+
+  }
+
+
+
+
+/*small desktop*/
+@media only screen and (min-width:992px) {
+
+#navigation ul li a {
+  position: relative;
+  display: block;
+  margin-right: 20px;
+  padding: 0;
+  line-height: 25px;
+  height: 25px;
+}
+
+#navigation ul li a::after {
+  content: "";
+  display: block;
+  transition: transform .2s cubic-bezier(.165,.84,.44,1),-webkit-transform .2s cubic-bezier(.165,.84,.44,1);
+  box-sizing: border-box;
+  border-bottom: solid 3px #3aaa35;
+  width: 100%;
+  position: absolute;
+  bottom: -3px;
+  right: 0;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+#navigation ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+}

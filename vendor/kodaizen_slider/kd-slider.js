@@ -19,7 +19,7 @@ var container = document.querySelector('.kd-slider-container');
 var diaporamaConfig = [
   {"autoPlay":false}, // défilement automatique
   {"autoEnd":true}, // stope ou quitte le diaporama à la fin de la série
-  {"delay":2} // durée d'affichage des élements en secondes
+  {"delay":3} // durée d'affichage des élements en secondes
 ];
 
 //initialisation du diaporama
@@ -32,13 +32,8 @@ for (var i = 0; i < media.length; i++) {
     media[i].style.opacity = 0;
   }
 }
+// slider.style.height = slider.clientWidth /1.777+"px";
 
-//bouton stop
-// stop.addEventListener('click', function(){
-//   stopVideo();
-//   clearTime();
-//   initiate();
-// });
 
 // //bouton plein écran
 fullscreenDiapBtn.addEventListener('click', function(){

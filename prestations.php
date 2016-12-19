@@ -1,4 +1,6 @@
-<?php include('header.php'); ?>
+<?php
+$page_title = "Prestations";
+ include('header.php'); ?>
 
 <div class="container">
 

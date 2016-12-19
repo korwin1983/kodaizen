@@ -1,6 +1,6 @@
 <?php
 $part = $_GET['part'];
-
+$page_title = "Réalisations";
  include('header.php') ?>
 
 <?php include('realisations_part/'.$part.'.php') ?>
@@ -13,8 +13,8 @@ $part = $_GET['part'];
   //réglage de la hauteur du slider format 16/9
 
 
-var slider = document.querySelector('.kd-slider-container');
-slider.style.height = slider.innerWidth /1.777+"px";
+// var slider = document.querySelector('.kd-slider-container');
+// slider.style.height = slider.clientWidth /1.777+"px";
 
 
 </script>

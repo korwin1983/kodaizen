@@ -1,4 +1,6 @@
-<?php include('header.php') ?>
+<?php
+$page_title = "Réalisations";
+include('header.php') ?>
 <div class="container">
   <section id="realisations">
     <div class="row">
@@ -35,26 +37,25 @@
               Refontes sur mesure de pages sur un site WordPress.<br>
               Développement d'un module newsletter connecté au CRM Zoho.
             </p>
-            <a href="" class="button">en savoir plus</a>
+            <a href="realisation.php?part=global" class="button">en savoir plus</a>
           </div>
         </article>
       </div>
-      <div class="col-md-4">
+      <!-- <div class="col-md-4">
         <div class="realisation-top">
           <span class="realisation-title">shop on you</span>
           <div class="more"></div>
         </div>
         <article id="soy">
           <div class="content">
-            <!-- <strong>maison Pour La Science</strong> -->
+
             <p>
-              Développement d'une vidéo interactive, de diaporamas et d'un quizz<br>
-              Développement d'une interface d'administration pour les diaporamas
+              Modification d'un template.
             </p>
             <a href="" class="button">en savoir plus</a>
           </div>
         </article>
-      </div>
+      </div> -->
     </div>
   </section>
 </div>

@@ -1,8 +1,8 @@
 <footer>
   <div class="container">
     <div class="col-md-12">
-      <p>KODAIZEN © 2016 Tous droits réservés</p>
-      <a href="#">mentions légales</a>
+      <p>KODAIZEN © 2016 | Tous droits réservés</p>
+      <a href="mentions_legales.php">Mentions légales</a>
     </div>
   </div>
 

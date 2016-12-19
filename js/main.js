@@ -8,7 +8,7 @@ $(document).ready(function(){
 	$('.testimonials-slider').slick({
 		autoplay: true
 	});
-	// alert('Site en cours de construction.');
+
 });
 
 
