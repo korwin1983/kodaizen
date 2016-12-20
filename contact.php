@@ -28,6 +28,7 @@ include('header.php') ?>
       <div class="contact-form col-md-12">
         <form id="form" action="admin/process_contact_form.php" method="post">
           <div class="form-box flex-column">
+            <input type="hidden" name="type" value="contact">
             <label for="">Nom*</label>
             <input type="text" name="last-name">
             <label for="">Prénom*</label>

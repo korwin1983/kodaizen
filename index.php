@@ -221,6 +221,31 @@ $page_title = "Accueil";
 
     </div>
 
+<div class="row flex-row">
+      <a id="show-comment-form" class="button" href="#">laisser un témoignage</a>
+</div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <form id="comment-form" action="admin/process_contact_form.php" method="post">
+          <div class="form-box flex-column">
+            <input type="hidden" name="type" value="comment">
+            <label for="">Nom</label>
+            <input type="text" name="last-name">
+            <label for="">Prénom*</label>
+            <input type="text" name="first-name">
+            <label for="">Société</label>
+            <input type="text" name="society">
+            <label for="">Message*</label>
+            <textarea name="message" rows="8" cols="80"></textarea>
+            <input class="button" type="submit" name="" value="valider">
+            <p>* champs obligatoires</p>
+              <p class="info"></p>
+          </div>
+        </form>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -242,6 +267,6 @@ var currentPage = "accueil";
 
 
 </script>
-
+<script src="js/comment_form.js" charset="utf-8"></script>
 
 <?php include('footer.php') ?>

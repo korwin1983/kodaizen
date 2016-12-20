@@ -4,6 +4,9 @@ include_once('../vendor/class/CheckVar.class.php');
 
 $checkvar = new Checkvar;
 
+if ($_POST['type'] === "contact") {
+
+
 $check_last_name = $checkvar->checkName($_POST['last-name'], FALSE);
 $check_first_name = $checkvar->checkName($_POST['first-name'], FALSE);
 $check_email = $checkvar->checkEmail($_POST['email'], FALSE);
@@ -69,8 +72,74 @@ else {
   $out['result'] = FALSE;
   $out['info'] = $error_info;
 }
-// print_r($out);
+
 echo json_encode($out);
 
 
+}
+
+
+if ($_POST['type'] === "comment") {
+
+  $check_last_name = $checkvar->checkName($_POST['last-name'], TRUE);
+  $check_first_name = $checkvar->checkName($_POST['first-name'], FALSE);
+  $check_society = $checkvar->checkName($_POST['society'], TRUE);
+  $check_message = $checkvar->checkText($_POST['message'], FALSE);
+
+  $validate = TRUE;
+  $error_info ="";
+
+  if ($check_last_name['result']) {
+    $last_name = $check_last_name['value'];
+  }
+  else {
+    $validate = FALSE;
+    $error_info = "Erreur champ nom: ".$check_last_name['message']."<br>";
+  }
+
+  if ($check_first_name['result']) {
+    $first_name = $check_first_name['value'];
+  }
+  else {
+    $validate = FALSE;
+    $error_info = $error_info."Erreur champ prénom: ".$check_first_name['message']."<br>";
+  }
+
+  if ($check_society['result']) {
+    $society = $check_society['value'];
+  }
+  else {
+    $validate = FALSE;
+    $error_info = $error_info."Erreur champ société: ".$check_society['message']."<br>";
+  }
+
+  if ($check_message['result']) {
+    $message = $check_message['value'];
+  }
+  else {
+    $validate = FALSE;
+    $error_info = $error_info."Erreur champ message: ".$check_message['message']."<br>";
+  }
+
+  if ($validate) {
+    $out['result'] = TRUE;
+
+
+  $sujet = "Témoignage site kodaizen";
+  $contenu = $first_name." ".$last_name."<br>".$society."<br>".$message;
+  $headers  = 'MIME-Version: 1.0' . "\r\n";
+  $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+  mail('guillaume.cartie@gmail.com', $sujet, $contenu, $headers);
+
+
+  }
+  else {
+    $out['result'] = FALSE;
+    $out['info'] = $error_info;
+  }
+
+  echo json_encode($out);
+
+
+}
  ?>

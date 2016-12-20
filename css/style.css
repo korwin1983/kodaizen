@@ -185,7 +185,29 @@ p{
   color: #fff;
 }
 
-
+.form-box {
+  background-color: #f2f3f8;
+  padding: 10px 30px 20px 30px;
+}
+.form-box label {
+  color: #3aaa35;
+  margin-top: 15px;
+}
+.form-box input {
+  border: none;
+}
+.form-box input::-moz-selection {
+  border: solid 1px #3aaa35;
+}
+.form-box input::selection {
+  border: solid 1px #3aaa35;
+}
+.form-box textarea {
+  border: none;
+}
+.form-box p {
+  color: #3aaa35;
+}
 
 /*REGLES HEADER---------------------------------------------------------------*/
 
@@ -515,6 +537,16 @@ p{
   margin-top: 50px;
 }
 
+#comment-form {
+height: 0;
+overflow: hidden;
+transition: all 0.5s ease-in;
+}
+.show-comment-form {
+  height: 750px!important;
+}
+
+
 /*REGLES PAGE PRESTATIONS-----------------------------------------------------*/
 
 .prestation .img {
@@ -721,31 +753,7 @@ margin-top: 30px;
   margin-top: 10px;
 }
 
-.form-box {
-  /*width: 100%;*/
-  /*margin: auto;*/
-  background-color: #f2f3f8;
-  padding: 10px 30px 20px 30px;
-}
-.form-box label {
-  color: #3aaa35;
-  margin-top: 15px;
-}
-.form-box input {
-  border: none;
-}
-.form-box input::-moz-selection {
-  border: solid 1px #3aaa35;
-}
-.form-box input::selection {
-  border: solid 1px #3aaa35;
-}
-.form-box textarea {
-  border: none;
-}
-.form-box p {
-  color: #3aaa35;
-}
+
 
 /*REGLES FOOTER---------------------------------------------------------------*/
 
